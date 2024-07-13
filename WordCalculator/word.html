@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>Celcius to Fahrenheit Convertor</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='word.css'>
+    <!--<script src='main.js'></script>!-->
+</head>
+<body>
+    <div id="wrapper">
+            <h3>Word Clculator</h3>
+            <h4>Type a sentence</h4>
+<div id="inputdiv">
+    <textarea id="input" placeholder="type a sentence" rows="10" cols="90"></textarea>
+</div>
+<br><br>
+<div>
+    <button type="submit" onclick="calculate()">Calculate</button>
+</div>
+    <div id="result">
+
+    </div>
+</div>
+<script>
+function calculate(){
+    const words=document.getElementById("input").value
+    const str=words.split(" ");
+    const res=str.length;
+    const result=document.getElementById("result")
+    result.innerHTML=res+" words"
+}
+</script>
+</body>
+</html>
